@@ -6,7 +6,7 @@ import urllib.request
 
 
 def build_summary(session_id):
-    return f"✅ Claude Code finished responding in mycustom_hooks (session {session_id})"
+    return f"✅ Claude Code finished responding in my-claude-hooks (session {session_id})"
 
 
 def post_to_slack(text):

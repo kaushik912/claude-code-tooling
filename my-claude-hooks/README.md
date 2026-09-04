@@ -1,4 +1,4 @@
-# mycustom_hooks
+# my-claude-hooks
 
 Custom Claude Code hooks for this project.
 

@@ -49,17 +49,17 @@ python3 -m venv .venv
 See [claude_orchestrator/README.md](claude_orchestrator/README.md) for
 architecture and the cron setup.
 
-### [mycustom_hooks](mycustom_hooks/)
+### [my-claude-hooks](my-claude-hooks/)
 Example Claude Code lifecycle hooks: `PreToolUse` audit logging to a local
 JSONL file, and a `Stop`-event Slack session summary.
 
 ```bash
-cd claude-code-tooling/mycustom_hooks
+cd claude-code-tooling/my-claude-hooks
 python3 -m venv .venv   # scripts are pure stdlib, no dependencies to install
 ```
 
 Then point a project's `.claude/settings.json` at the hook scripts here — see
-[mycustom_hooks/README.md](mycustom_hooks/README.md) for the full config and
+[my-claude-hooks/README.md](my-claude-hooks/README.md) for the full config and
 how to keep secrets (Slack webhook URL, etc.) out of version control.
 
 ## Other projects in this repo

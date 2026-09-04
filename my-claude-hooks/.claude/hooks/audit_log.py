@@ -3,7 +3,7 @@ import json
 import sys
 from datetime import datetime, timezone
 
-AUDIT_LOG_PATH = "/home/kaush/github_projs/claude-code-tooling/mycustom_hooks/.claude/hooks/audit.jsonl"
+AUDIT_LOG_PATH = "/home/kaush/github_projs/claude-code-tooling/my-claude-hooks/.claude/hooks/audit.jsonl"
 
 
 def audit(tool_input):
