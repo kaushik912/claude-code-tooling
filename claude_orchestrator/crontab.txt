@@ -1,0 +1,3 @@
+PATH=/home/kaush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+TZ=Asia/Kolkata
+0 0 * * * cd /home/kaush/github_projs/claude_orchestrator && .venv/bin/python pipeline/ai_workflow_runner.py --dir docprompts --timeout 300 >> /home/kaush/github_projs/claude_orchestrator/results/cron.log 2>&1
