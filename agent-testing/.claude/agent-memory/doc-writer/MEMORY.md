@@ -1,0 +1,1 @@
+- [Repo structure notes](repo_structure.md) — agent-testing = tiny Spring Boot 4.1.1 skeleton, layout/deps snapshot as of 2026-08-31

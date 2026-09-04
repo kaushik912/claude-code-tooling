@@ -1,0 +1,5 @@
+- [Repo baseline state](repo_baseline.md) — minimal Boot 4.1.1/Framework 7 skeleton, verified runtime-boots, checklist mostly N/A until real logic added
+- [No checkstyle/PMD config in repo](no_lint_config.md) — can't check "project rules" until a config file exists; flag every review
+- [Mixed tab/space indentation](mixed_indentation.md) — Initializr files use tabs, hand-written files use spaces
+- [pom.xml placeholder metadata](pom_placeholder_metadata.md) — empty description/url/license/developer/scm tags from Initializr
+- [Verify version-skew concerns before flagging](verify_before_flagging.md) — springdoc 2.8.6 + Boot 4.1.1 looked suspect but boots fine; always runtime-check, don't flag from version numbers alone

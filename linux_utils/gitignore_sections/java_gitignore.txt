@@ -1,0 +1,6 @@
+# Java/Maven/Gradle outputs
+target/
+build/
+out/
+.gradle/
+*.class

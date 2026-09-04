@@ -1,0 +1,1 @@
+- [OrderFlow NPE pattern](orderflow_npe.md) — guest orders have null address; chained null-check bug fixed in ControllerFlowController

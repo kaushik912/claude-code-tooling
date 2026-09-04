@@ -1,0 +1,7 @@
+1. Migration bake-off (yours): "Spin up two herdr panes with an agent each to investigate how much work it'd be to migrate this to Java vs Python. Make it super-fast, not too detailed."
+2. Parallel code review: "Spin up 3 herdr panes — security, perf, style — each review the current diff and give me a 3-bullet verdict."
+3. Dependency upgrade scout: "Spin up two herdr panes: one checks breaking changes for bumping express to v5, other checks react to v19. Fast, just risk + effort."
+4. Race two fixes: "Spin up two herdr panes on separate worktrees, each fix the /div bug a different way. Show me both diffs, don't apply either."
+5. Chaos + triage: "Spin up a pane that hammers /div with bad input in a loop, and a diagnoser pane that watches logs and summarizes failures as they happen."
+6. Framework bake-off: "Spin up two herdr panes to compare Vitest vs Jest for this repo — setup cost and gotchas only, skip the deep dive."
+7. Standing on-call diagnoser (what we built): "Add an on-demand diagnostic agent I can re-run anytime a request 5xxs."

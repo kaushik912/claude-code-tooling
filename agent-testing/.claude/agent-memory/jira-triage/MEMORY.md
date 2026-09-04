@@ -1,0 +1,1 @@
+- [Jira site](jira_site.md) — cloudId is `kaushik2016.atlassian.net` (uuid 61e40543-9327-41b7-96d3-4ccd7dd74102), project SCRUM

@@ -1,0 +1,4 @@
+- [agent-testing repo conventions](project_agent_testing_conventions.md) — flat package, springdoc already in pom.xml, controller/service pattern to copy; tracks tickets implemented
+- [Jira SCRUM project reference](reference_jira_scrum.md) — cloudId + project key for agent-testing tickets
+- [Always record ticket ID at task end](feedback_record_ticket_id.md) — add ticket ID/summary/date to memory by default, don't wait to be asked
+- [Re-check Jira description before trusting triage](feedback_jira_description_visibility.md) — SCRUM-7 had a real description despite triage saying none; always verify directly
