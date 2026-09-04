@@ -1,9 +1,3 @@
-# do-not-refactor projects (own .git, keep untouched)
-agent-porter/
-batch-utils/
-claude_orchestrator/
-mycustom_hooks/
-
 # build artifacts
 target/
 *.class
