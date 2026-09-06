@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "atlassian-query": {
+      "source": "../../my-claude-skills",
+      "sourceType": "local",
+      "computedHash": "6427b19ce106d14e5a70bdfbfb4d9b1fc1276a394421cde3c5d8ff2fec822c11"
+    },
+    "mysql-query": {
+      "source": "../../my-claude-skills",
+      "sourceType": "local",
+      "computedHash": "64f353b2619c2addb5b427a31b0b035871f2c4e8a432d9aa5482c614a0452416"
+    }
+  }
+}
