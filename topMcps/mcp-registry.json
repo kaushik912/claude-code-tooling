@@ -1,0 +1,6 @@
+{
+  "atlassian": "claude mcp add -s project Atlassian -- npx -y mcp-remote@latest https://mcp.atlassian.com/v1/mcp/authv2",
+  "context7": "claude mcp add -s project context7 --transport http https://mcp.context7.com/mcp",
+  "mysql": "claude mcp add -s project mysql -e MYSQL_HOST=localhost -e MYSQL_PORT=3306 -e MYSQL_USER=root -e MYSQL_PASS='${MYSQL_PWD}' -e MYSQL_DB=<your_db> -- npx -y @benborla29/mcp-server-mysql",
+  "codebase-memory-mcp": "claude mcp add -s project codebase-memory-mcp -e CBM_ALLOWED_ROOT=$(pwd) -- /home/kaush/.local/bin/codebase-memory-mcp"
+}

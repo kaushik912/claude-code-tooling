@@ -2,7 +2,10 @@
   "mcpServers": {
     "mysql": {
       "command": "npx",
-      "args": ["-y", "@benborla29/mcp-server-mysql"],
+      "args": [
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -13,7 +16,19 @@
     },
     "Atlassian": {
       "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://mcp.atlassian.com/v1/mcp/authv2"]
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.atlassian.com/v1/mcp/authv2"
+      ]
+    },
+    "codebase-memory-mcp": {
+      "type": "stdio",
+      "command": "/home/kaush/.local/bin/codebase-memory-mcp",
+      "args": [],
+      "env": {
+        "CBM_ALLOWED_ROOT": "/home/kaush/github_projs/claude-code-tooling/topMcps"
+      }
     }
   }
 }
