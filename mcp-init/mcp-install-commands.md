@@ -11,7 +11,7 @@ All via `claude mcp add` from inside the target project dir (`-s project` writes
 curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash -s -- --skip-config
 claude mcp add -s project codebase-memory-mcp -e CBM_ALLOWED_ROOT=$(pwd) -- /home/kaush/.local/bin/codebase-memory-mcp
 ```
-See `codebase-memory-mcp-notes.md` in this dir for gotchas.
+See `../topMcps/codebase-memory-mcp-notes.md` for gotchas.
 
 ## mysql (@benborla29/mcp-server-mysql)
 ```
