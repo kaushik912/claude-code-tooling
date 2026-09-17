@@ -29,6 +29,15 @@
       "env": {
         "CBM_ALLOWED_ROOT": "/home/kaush/github_projs/claude-code-tooling/topMcps"
       }
+    },
+    "github": {
+      "type": "stdio",
+      "command": "java",
+      "args": [
+        "-jar",
+        "/home/kaush/github_projs/enterprise-repos/gh_mcp_server/build/libs/gh_mcp_server.jar"
+      ],
+      "env": {}
     }
   }
 }
