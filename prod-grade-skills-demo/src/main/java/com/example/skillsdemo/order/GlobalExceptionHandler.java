@@ -7,11 +7,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import com.example.skillsdemo.product.ProductNotFoundException;
+
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
 	@ExceptionHandler(InvalidPromoCodeException.class)
 	public ResponseEntity<Map<String, String>> handleInvalidPromoCode(InvalidPromoCodeException ex) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", "invalid promo code"));
+	}
+
+	@ExceptionHandler(ProductNotFoundException.class)
+	public ResponseEntity<Map<String, String>> handleProductNotFound(ProductNotFoundException ex) {
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", ex.getMessage()));
 	}
 }

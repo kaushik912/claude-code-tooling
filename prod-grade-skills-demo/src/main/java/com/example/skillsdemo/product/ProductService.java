@@ -21,13 +21,8 @@ public class ProductService {
 		return productRepository.save(new Product(sku, name, priceCents, stockQty));
 	}
 
-	/**
-	 * NOTE: this is the seeded bug for docs/scenarios/02-bug-fix-404-mapping.md --
-	 * an unknown id currently surfaces as a bare RuntimeException, which Spring
-	 * maps to a 500 instead of a 404. See that doc for the fix walkthrough.
-	 */
 	public Product getById(Long id) {
 		return productRepository.findById(id)
-				.orElseThrow(() -> new RuntimeException("Product not found: " + id));
+				.orElseThrow(() -> new ProductNotFoundException(id));
 	}
 }

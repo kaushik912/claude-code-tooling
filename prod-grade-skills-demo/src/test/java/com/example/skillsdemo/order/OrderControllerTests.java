@@ -70,15 +70,16 @@ class OrderControllerTests {
 	}
 
 	@Test
-	void givenUnknownProductId_whenGetProduct_thenStillReturns500Unchanged() {
-		// Given -- confirms the new promo-code exception handler didn't widen scope
-		// onto ProductService.getById's existing (buggy) bare RuntimeException.
-		// See docs/scenarios/02-bug-fix-404-mapping.md for the actual fix.
+	void givenUnknownProductId_whenGetProduct_thenReturns404() {
+		// Bug: docs/scenarios/02-bug-fix-404-mapping.md -- unknown id used to surface
+		// as a bare 500; ProductNotFoundException + GlobalExceptionHandler now map it to 404.
 
 		// When
+		// Before fix: 500. Now: 404 with a "Product not found" message.
 		ResponseEntity<String> response = restTemplate.getForEntity("/api/products/999999", String.class);
 
 		// Then
-		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
+		assertThat(response.getBody()).contains("Product not found");
 	}
 }
