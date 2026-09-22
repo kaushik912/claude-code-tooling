@@ -25,7 +25,7 @@ public class OrderController {
 	@PostMapping
 	@Operation(summary = "Place an order")
 	public OrderResponse placeOrder(@Valid @RequestBody PlaceOrderRequest request) {
-		var order = orderService.placeOrder(request.productId(), request.quantity(), null);
+		var order = orderService.placeOrder(request.productId(), request.quantity(), request.promoCode());
 		return OrderResponse.from(order);
 	}
 

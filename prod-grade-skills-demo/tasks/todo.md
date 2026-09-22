@@ -69,7 +69,7 @@ behavior is unchanged. On invalid code, the exception propagates and neither `re
 ## Phase 2: API Surface
 
 ### Task 3: Expose `promoCode` on the API
-- [ ] Not started
+- [x] Done
 
 **Description:** `PlaceOrderRequest` gains an optional `promoCode` field (nullable `String`, no
 validation annotation). `OrderController.placeOrder` passes it through to
@@ -78,17 +78,17 @@ validation annotation). `OrderController.placeOrder` passes it through to
 exception type only — must not intercept `ProductService.getById`'s existing `RuntimeException`.
 
 **Acceptance criteria:**
-- [ ] `POST /api/orders` with `promoCode: "SAVE10"` → `200`, discounted `totalAmountCents`
-- [ ] `POST /api/orders` with `promoCode: "NOPE"` → `400`, body `{"error": "invalid promo code"}`,
+- [x] `POST /api/orders` with `promoCode: "SAVE10"` → `200`, discounted `totalAmountCents`
+- [x] `POST /api/orders` with `promoCode: "NOPE"` → `400`, body `{"error": "invalid promo code"}`,
       and no `Order` row written (assert via repository count or mock verification)
-- [ ] `POST /api/orders` with no `promoCode` field → identical response to current behavior
-- [ ] `GET /api/products/{unknownId}` still returns `500` (unchanged) — confirms the new handler
+- [x] `POST /api/orders` with no `promoCode` field → identical response to current behavior
+- [x] `GET /api/products/{unknownId}` still returns `500` (unchanged) — confirms the new handler
       didn't accidentally widen scope onto scenario 2's bug
 
 **Verification:**
-- [ ] Tests pass: `./mvnw test`
-- [ ] Build succeeds: `./mvnw compile`
-- [ ] Manual check: `./mvnw spring-boot:run`, exercise all three `promoCode` cases via
+- [x] Tests pass: `./mvnw test`
+- [x] Build succeeds: `./mvnw compile`
+- [x] Manual check: `./mvnw spring-boot:run`, exercise all three `promoCode` cases via
       `/swagger-ui.html` or curl
 
 **Dependencies:** Task 2
@@ -103,7 +103,7 @@ exception type only — must not intercept `ProductService.getById`'s existing `
 **Scope:** M (2 edited files, 2 new files)
 
 ## Checkpoint: Complete
-- [ ] `./mvnw test` passes (full suite)
-- [ ] All `SPEC.md` success criteria met
-- [ ] Swagger UI reflects the new field
-- [ ] Ready for `/constraints` and `/review`
+- [x] `./mvnw test` passes (full suite)
+- [x] All `SPEC.md` success criteria met
+- [x] Swagger UI reflects the new field
+- [x] Ready for `/constraints` and `/review`
