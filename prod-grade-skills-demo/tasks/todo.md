@@ -33,7 +33,7 @@ percentage (integer division, rounded down) or throws on unknown code.
 ---
 
 ### Task 2: Wire promo into `OrderService.placeOrder`
-- [ ] Not started
+- [x] Done
 
 **Description:** `OrderService.placeOrder` gains a `promoCode` parameter. When non-null, calls
 `PromoCodeService.apply` on the base total **before** `product.reserveStock(...)`; when null,
@@ -41,15 +41,15 @@ behavior is unchanged. On invalid code, the exception propagates and neither `re
 `orderRepository.save` runs.
 
 **Acceptance criteria:**
-- [ ] `placeOrder(id, qty, "SAVE10")` returns an `Order` with discounted `totalAmountCents`
-- [ ] `placeOrder(id, qty, "NOPE")` throws `InvalidPromoCodeException`; `reserveStock` and
+- [x] `placeOrder(id, qty, "SAVE10")` returns an `Order` with discounted `totalAmountCents`
+- [x] `placeOrder(id, qty, "NOPE")` throws `InvalidPromoCodeException`; `reserveStock` and
       `orderRepository.save` are never invoked (Mockito `verify(..., never())`)
-- [ ] `placeOrder(id, qty, null)` produces byte-identical output to the current (pre-change)
+- [x] `placeOrder(id, qty, null)` produces byte-identical output to the current (pre-change)
       behavior
 
 **Verification:**
-- [ ] Tests pass: `./mvnw test -Dtest=OrderServiceTests`
-- [ ] Build succeeds: `./mvnw compile`
+- [x] Tests pass: `./mvnw test -Dtest=OrderServiceTests`
+- [x] Build succeeds: `./mvnw compile`
 
 **Dependencies:** Task 1
 
@@ -62,8 +62,8 @@ behavior is unchanged. On invalid code, the exception propagates and neither `re
 **Scope:** S (1 edited file, 1 new test file)
 
 ## Checkpoint: Foundation
-- [ ] `./mvnw test` passes
-- [ ] `./mvnw compile` succeeds
+- [x] `./mvnw test` passes
+- [x] `./mvnw compile` succeeds
 - [ ] Review with human before proceeding to Phase 2
 
 ## Phase 2: API Surface

@@ -10,21 +10,20 @@ public class OrderService {
 
 	private final OrderRepository orderRepository;
 	private final ProductService productService;
+	private final PromoCodeService promoCodeService;
 
-	public OrderService(OrderRepository orderRepository, ProductService productService) {
+	public OrderService(OrderRepository orderRepository, ProductService productService,
+			PromoCodeService promoCodeService) {
 		this.orderRepository = orderRepository;
 		this.productService = productService;
+		this.promoCodeService = promoCodeService;
 	}
 
-	/**
-	 * Baseline checkout flow -- no promo codes yet. See
-	 * docs/scenarios/01-new-feature-promo-code.md for the feature walkthrough
-	 * that extends this method.
-	 */
-	public Order placeOrder(Long productId, int quantity) {
+	public Order placeOrder(Long productId, int quantity, String promoCode) {
 		Product product = productService.getById(productId);
-		product.reserveStock(quantity);
-		long totalAmountCents = product.getPriceCents() * quantity;
+		long baseTotal = product.getPriceCents() * quantity;
+		long totalAmountCents = promoCode == null ? baseTotal : promoCodeService.apply(promoCode, baseTotal);
+		product.reserveStock(quantity); // after pricing/validation -- no partial side effects
 		return orderRepository.save(new Order(productId, quantity, totalAmountCents, "PLACED"));
 	}
 
