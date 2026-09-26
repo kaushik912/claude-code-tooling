@@ -1,13 +1,13 @@
-package com.example.buggyproject;
+package com.debug.productnpe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BuggyProjectApplication {
+public class ProductNpeDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BuggyProjectApplication.class, args);
+		SpringApplication.run(ProductNpeDemoApplication.class, args);
 	}
 
 }
