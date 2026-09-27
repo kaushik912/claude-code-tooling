@@ -50,8 +50,29 @@ curl http://localhost:8080/products/4/category   # 500 NullPointerException
 
 Swagger UI: http://localhost:8080/swagger-ui.html
 
+## Scenario 2: reviews count
+
+A second entity, `Review`, was added with a relationship back to `Product`.
+One more endpoint:
+
+```
+GET /products/{id}/reviews-count
+```
+
+...which fetches the product and returns how many reviews it has.
+
+Some requests work fine, some don't:
+
+```
+GET /products/1/category         -> 200 "ELECTRONICS"
+GET /products/1/reviews-count    -> 500 Internal Server Error
+```
+
+Nothing about the controller or service code looks obviously wrong on a
+read-through. Reproduce it, look at the stack trace, and trace *why* this
+particular call path fails while the rest of the app is fine.
+
 ## Other planted scenarios
 
-See [`../scenarios.md`](../scenarios.md) for two more runtime-bug scenarios
-(Hibernate lazy-loading trap, cache staleness) — documented but not yet
-implemented.
+See [`../scenarios.md`](../scenarios.md) for one more runtime-bug scenario
+(cache staleness) — documented but not yet implemented.

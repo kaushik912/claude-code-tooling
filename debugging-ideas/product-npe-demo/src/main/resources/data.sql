@@ -3,3 +3,7 @@ INSERT INTO product (id, name, category) VALUES (2, 'Coffee Mug', 'kitchen');
 INSERT INTO product (id, name, category) VALUES (3, 'Desk Lamp', 'furniture');
 INSERT INTO product (id, name, category) VALUES (4, 'Gift Card', NULL);
 INSERT INTO product (id, name, category) VALUES (5, 'Notebook', 'stationery');
+
+INSERT INTO review (comment, product_id) VALUES ('Great mouse!', 1);
+INSERT INTO review (comment, product_id) VALUES ('Works well.', 1);
+INSERT INTO review (comment, product_id) VALUES ('Cute mug.', 2);

@@ -21,4 +21,11 @@ public class ProductController {
     public String getUpperCasedCategory(@PathVariable Long id) {
         return productService.getUpperCasedCategory(id);
     }
+
+    @Operation(summary = "Get the number of reviews for a product")
+    @GetMapping("/products/{id}/reviews-count")
+    public int getReviewsCount(@PathVariable Long id) {
+        Product product = productService.getProduct(id);
+        return product.getReviews().size();
+    }
 }

@@ -1,6 +1,7 @@
 package com.debug.productnpe;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ProductService {
@@ -16,5 +17,11 @@ public class ProductService {
                 .orElseThrow(() -> new ProductNotFoundException(id));
         String category = product.getCategory();
         return category == null ? null : category.toUpperCase();
+    }
+
+    @Transactional(readOnly = true)
+    public Product getProduct(Long id) {
+        return productRepository.findById(id)
+                .orElseThrow(() -> new ProductNotFoundException(id));
     }
 }
