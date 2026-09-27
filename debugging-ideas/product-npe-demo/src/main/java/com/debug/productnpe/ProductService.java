@@ -15,8 +15,7 @@ public class ProductService {
     public String getUpperCasedCategory(Long id) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException(id));
-        String category = product.getCategory();
-        return category == null ? null : category.toUpperCase();
+        return product.getCategory().toUpperCase();
     }
 
     @Transactional(readOnly = true)
