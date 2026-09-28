@@ -64,5 +64,5 @@ how to keep secrets (Slack webhook URL, etc.) out of version control.
 
 ## Other projects in this repo
 
-`agent-testing`, `herdr_demo`, `linux_utils`, `tmux-claude`, `topClaudeSkills` —
+`agent-testing`, `herdr_demo`, `linux_utils`, `tmux-claude`, `topClaudePlugins` —
 see each directory for details.
