@@ -6,20 +6,6 @@ self-contained; clone this repo and `cd` into the one you need.
 
 ## Tools
 
-### [agent-porter](agent-porter/)
-Converts and installs agent definitions between Claude Code's `.claude/agents/*.md`
-subagent format and GitHub Copilot's `.github/agents/*.agent.md` custom-agent
-format.
-
-```bash
-git clone https://github.com/kaushik912/claude-code-tooling.git
-cd claude-code-tooling/agent-porter
-npm install
-npm link   # optional: makes `agent-porter` runnable from anywhere
-```
-
-See [agent-porter/README.md](agent-porter/README.md) for full usage.
-
 ### [batch-utils](batch-utils/)
 Python scripts to batch source files into a single markdown document (for
 sharing code where attachments are limited, or feeding code to an AI) and
