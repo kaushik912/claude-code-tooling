@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "debugmcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "debugmcp",
+        "serve",
+        "--stdio"
+      ],
+      "env": {}
+    }
+  }
+}

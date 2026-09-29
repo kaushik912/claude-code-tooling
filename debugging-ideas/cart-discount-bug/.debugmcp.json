@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "adapters": {
+    "python": {
+      "command": "/home/kaush/github_projs/claude-code-tooling/debugging-ideas/cart-discount-bug/.venv/bin/python",
+      "args": [
+        "-m",
+        "debugpy.adapter"
+      ],
+      "type": "python",
+      "extensions": [
+        ".py"
+      ],
+      "transport": "stdio"
+    }
+  }
+}
