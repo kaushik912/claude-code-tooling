@@ -12,7 +12,7 @@ def subtotal(items):
 
 def apply_discount(total, code):
     rate = DISCOUNTS.get(code, 0)
-    return total * (1 - rate)
+    return total - rate
 
 
 def checkout(items, code=None):
