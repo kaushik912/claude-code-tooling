@@ -9,6 +9,7 @@
     "planetscale@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
     "modern-web-guidance@claude-plugins-official": true,
-    "vercel@claude-plugins-official": true
+    "vercel@claude-plugins-official": true,
+    "fullstack-dev-skills@fullstack-dev-skills": true
   }
 }

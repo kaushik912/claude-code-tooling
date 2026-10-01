@@ -4,18 +4,60 @@ Reference repo for the Claude Code plugins I use. All are enabled via `.claude/s
 
 ## Plugins
 
-| Plugin | Marketplace | Benefit |
-|--------|-------------|---------|
-| superpowers | claude-plugins-official | Structured dev flow (brainstorm → plan → execute → review), TDD, systematic debugging, verification before "done" |
-| example-skills | anthropic-agent-skills | Anthropic's reference skills: frontend-design, doc-coauthoring, mcp-builder, webapp-testing, skill-creator, etc. |
-| code-simplifier | claude-plugins-official | Refactors recent code for clarity/consistency without changing behavior |
-| terrashark | terrashark | Terraform diagnostics against HashiCorp best practices |
-| ai-toolkit (Spartan) | spartan-marketplace | Workflow commands (`/spartan:*`): spec → plan → build → PR, quality gates, Terraform, Next.js, Kotlin scaffolding |
-| caveman | caveman | Ultra-compressed replies — fewer output tokens, same technical accuracy; brief commit/review helpers |
-| planetscale | claude-plugins-official | Safe SQL branching, schema/index/N+1 best practices, MySQL/Postgres/Vitess guidance, MCP access |
-| context7 | claude-plugins-official | Up-to-date library/framework docs via MCP instead of stale training data |
-| modern-web-guidance | claude-plugins-official | Current modern-web and Chrome-extension guidance |
-| vercel | claude-plugins-official | Deploy/env/status commands, Next.js, AI SDK, workflow, caching, functions skills, plus deploy/perf/AI agents and MCP |
+### superpowers
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Structured dev flow (brainstorm → plan → execute → review), TDD, systematic debugging, verification before "done".
+
+### example-skills
+
+- **Marketplace:** anthropic-agent-skills
+- **Benefit:** Anthropic's reference skills: frontend-design, doc-coauthoring, mcp-builder, webapp-testing, skill-creator, etc.
+
+### code-simplifier
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Refactors recent code for clarity/consistency without changing behavior.
+
+### terrashark
+
+- **Marketplace:** terrashark
+- **Benefit:** Terraform diagnostics against HashiCorp best practices.
+
+### ai-toolkit (Spartan)
+
+- **Marketplace:** spartan-marketplace
+- **Benefit:** Workflow commands (`/spartan:*`): spec → plan → build → PR, quality gates, Terraform, Next.js, Kotlin scaffolding.
+
+### caveman
+
+- **Marketplace:** caveman
+- **Benefit:** Ultra-compressed replies — fewer output tokens, same technical accuracy; brief commit/review helpers.
+
+### planetscale
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Safe SQL branching, schema/index/N+1 best practices, MySQL/Postgres/Vitess guidance, MCP access.
+
+### context7
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Up-to-date library/framework docs via MCP instead of stale training data.
+
+### modern-web-guidance
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Current modern-web and Chrome-extension guidance.
+
+### vercel
+
+- **Marketplace:** claude-plugins-official
+- **Benefit:** Deploy/env/status commands, Next.js, AI SDK, workflow, caching, functions skills, plus deploy/perf/AI agents and MCP.
+
+### fullstack-dev-skills
+
+- **Marketplace:** fullstack-dev-skills
+- **Benefit:** 67 skills for full-stack devs: 12 language experts (Python, TS, Go, Rust, Java, Kotlin, etc.), backend/frontend/mobile frameworks, DevOps, security, testing, plus Jira/Confluence project-management workflows.
 
 ## Why plugins (not local skills)
 
