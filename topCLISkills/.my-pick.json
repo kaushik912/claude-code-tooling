@@ -1,0 +1,11 @@
+{
+  "lib": "kaushik912/my-claude-lib",
+  "ref": "6669acf4b8d0d2ef42c7ce9ae8fba416db4c3e30",
+  "items": {
+    "skills": [
+      "find-docs",
+      "jira-query",
+      "mysql-query"
+    ]
+  }
+}
