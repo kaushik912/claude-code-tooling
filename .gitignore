@@ -9,3 +9,15 @@ __pycache__/
 *.iml
 .DS_Store
 *.cnf
+
+# my-pick links into my-claude-lib (recreate with `my-pick sync`)
+topCLISkills/.agents/skills/find-docs
+topCLISkills/.agents/skills/jira-query
+topCLISkills/.agents/skills/mysql-query
+topCLISkills/.claude/skills/find-docs
+topCLISkills/.claude/skills/jira-query
+topCLISkills/.claude/skills/mysql-query
+debugging-ideas/product-npe-demo/.agents/skills/debug-live
+debugging-ideas/product-npe-demo/.agents/skills/jdb-attach
+debugging-ideas/product-npe-demo/.claude/skills/debug-live
+debugging-ideas/product-npe-demo/.claude/skills/jdb-attach
