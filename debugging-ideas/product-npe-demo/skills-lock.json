@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "jdb-attach": {
+      "source": "../../../my-claude-lib/skills",
+      "sourceType": "local",
+      "computedHash": "64258fbfc1ba9d22b31541ac0b12cf1e1bdadefe8c4c8ff31afc74a56bddde21"
+    }
+  }
+}

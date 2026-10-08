@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "jira-query": {
+      "source": "../../my-claude-lib/skills",
+      "sourceType": "local",
+      "computedHash": "a4f8f6a2d7fe01d62fafe08be0a7f5f227f098bcf7cc7018b549975343706181"
+    },
+    "mysql-query": {
+      "source": "../../my-claude-lib/skills",
+      "sourceType": "local",
+      "computedHash": "dc51b11b1005b0909d3dbe93f9b87114cf6c88db1cbc7f1abe385f2d84b8e88a"
+    }
+  }
+}
