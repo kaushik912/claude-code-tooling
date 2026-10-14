@@ -12,6 +12,7 @@ Personal shell/Python utility scripts for managing local git repos, Maven builds
 | `list_missing_remotes.sh [workspace]` | List repos under a workspace dir with no `origin` remote configured. |
 | `create_repo_gitignores.py [--root DIR] [--stacks java,python,node] [--dry-run] [--force]` | Interactively (or via flags) assemble a `.gitignore` from `gitignore_sections/*.txt` (common + chosen stacks). |
 | `build_maven_projects.sh [root]` | Find all `pom.xml` under root, run `mvn -q -DskipTests compile` on each, report pass/fail summary. |
+| `project_audit.py [root] [--require FILE...] [--marker FILE...] [--skip DIR...]` | Recursively find Maven projects (dirs with `pom.xml`, one row per module) and check each has `README.md` + `CLAUDE.md`. Prints `Passed: x/y`; exit 1 if any fail. Tests: `python3 -m unittest test_project_audit` in this dir. Alias: `cc-audit`. |
 | `clear_log_files.sh [--dry-run] DIRECTORY` | Recursively delete `*.log` files under DIRECTORY; `--dry-run` lists without deleting. |
 | `utc_ist_convert.sh [ist HH:MM \| utc HH:MM]` | Convert between UTC and IST (no args = current time); also prints cron minute/hour fields for `ist` mode. |
 
